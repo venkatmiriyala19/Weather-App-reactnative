@@ -1,4 +1,4 @@
-export const apiKey = '25e3ed256e5241be8cb145924241402';
+export const apiKey = process.env.REACT_APP_PUBLIC_WEATHER_API_KEY;
 
 export const weatherImages = {
   'Partly cloudy': require('../assets/images/partlycloudy.png'),
