@@ -78,7 +78,7 @@ const Home = () => {
     <View
       style={[
         s`flex-1 relative`,
-        {paddingTop: Platform.OS === 'android' ? RNStatusBar.currentHeight : 0},
+        // {paddingTop: Platform.OS === 'android' ? RNStatusBar.currentHeight : 0},
       ]}>
       <StatusBar
         barStyle="light-content"
@@ -102,7 +102,7 @@ const Home = () => {
           />
         </View>
       ) : (
-        <SafeAreaView style={s`flex flex-1`}>
+        <SafeAreaView style={s`flex flex-1 pt-10`}>
           {/* Search Bar */}
           <View style={[s`mx-4 relative z-50`, {height: '7%'}]}>
             <View

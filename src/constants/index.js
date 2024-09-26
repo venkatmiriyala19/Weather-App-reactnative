@@ -1,4 +1,6 @@
-export const apiKey = process.env.REACT_APP_PUBLIC_WEATHER_API_KEY;
+// import {API_KEY} from '@env';
+
+export const apiKey = process.env.API_KEY;
 
 export const weatherImages = {
   'Partly cloudy': require('../assets/images/partlycloudy.png'),
