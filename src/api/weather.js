@@ -16,11 +16,11 @@ const apiCall = async endpoint => {
 };
 
 export const fetchWeatherForecast = params => {
-  const forecastEndpoint = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${params.cityName}&days=${params.days}&aqi=no&alerts=no`;
+  const forecastEndpoint = `http://api.weatherapi.com/v1/forecast.json?key=0fae7b047cdf456283e124934243011&q=${params.cityName}&days=${params.days}&aqi=no&alerts=no`;
   return apiCall(forecastEndpoint);
 };
 
 export const fetchLocations = params => {
-  const locationsEndpoint = `http://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${params.cityName}`;
+  const locationsEndpoint = `http://api.weatherapi.com/v1/search.json?key=0fae7b047cdf456283e124934243011&q=${params.cityName}`;
   return apiCall(locationsEndpoint);
 };
